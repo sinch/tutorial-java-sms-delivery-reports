@@ -1,0 +1,22 @@
+plugins {
+	id 'org.springframework.boot' version '2.1.7.RELEASE'
+	id 'java'
+}
+
+apply plugin: 'io.spring.dependency-management'
+
+group = 'com.sinch'
+version = '1.0.0'
+sourceCompatibility = '8'
+targetCompatibility = '8'
+libsDirName = '../bin'
+
+repositories {
+	mavenCentral()
+}
+
+dependencies {
+	implementation 'org.springframework.boot:spring-boot-starter-web'
+
+	compile 'com.clxcommunications:sdk-xms:1.0.2'
+}

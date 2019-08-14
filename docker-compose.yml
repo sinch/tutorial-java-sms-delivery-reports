@@ -1,0 +1,30 @@
+version: "3.7"
+services:
+
+  ngrok:
+    image: wernight/ngrok:latest
+    environment:
+      NGROK_PORT: webapp:8080
+    ports:
+      - "4040:4040"
+    networks:
+      - skynet
+
+  webapp:
+    build:
+      context: ./bin
+      dockerfile: ../Dockerfile
+      args:
+        JAR_FILE: "*.jar"
+    environment:
+      NGROK_API_HOST: ngrok
+      NGROK_API_PORT: 4040
+      SINCH_API_TOKEN: ${SINCH_API_TOKEN}
+      SINCH_API_SERVICEPLANID: ${SINCH_API_SERVICE_PLAN_ID}
+    ports:
+      - "8080:8080"
+    networks:
+      - skynet
+
+networks:
+  skynet:

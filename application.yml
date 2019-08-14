@@ -1,0 +1,4 @@
+sinch:
+  api:
+    token: "****API Token not set. Set it in application.yml file; see README.md****"
+    servicePlanId: "****Service Plan ID not set. Set it in application.yml file; see README.md****"

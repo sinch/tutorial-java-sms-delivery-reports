@@ -1,0 +1,9 @@
+sinch:
+  api:
+    token: "{NOT SET}"
+    servicePlanId: "{NOT SET}"
+
+ngrok:
+  api:
+    host: localhost
+    port: 4040
