@@ -1,3 +1,7 @@
+# Deprecation note
+:exclamation: :warning:
+**This repository is archived and no longer maintained**
+
 # Tutorial: Receive delivery reports in a Spring Boot application
 
 This is the supporting code for the [Receiving Delivery Reports in Spring Boot](https://sinch.readme.io/docs/tutorial-java-spring-boot-delivery-reports) Sinch tutorial.
